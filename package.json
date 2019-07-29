@@ -8,6 +8,9 @@
     "start": "node server.js",
     "heroku-postbuild": "cd frontend && npm install --only=dev && npm run build"
   },
+  "engines": {
+    "node": "10.15.1"
+},
   "author": "",
   "license": "ISC",
   "dependencies": {
