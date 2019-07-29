@@ -3,12 +3,13 @@ const app=express();
 const message_api=require('./apis/message_api');
 const video_api=require('./apis/video_api');
 const event_api=require('./apis/event_api');
-const bodyParser=require('body-Parser');
+const bodyParser=require('body-parser');
 const mongoose=require('mongoose');
 const path= require('path');
 
 const db= process.env.MONGODB_URI || "mongodb://localhost:27017/Web";
-
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.urlencoded({
     extended: false
  }));
